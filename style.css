@@ -18,7 +18,7 @@
 .form-users{
     height: 500px;
     background-color: #04014E;
-    padding-top: 5%;
+    padding-top: 1%;
     margin-left: 20%;
     margin-right: 0;
     width: 40%;
@@ -33,18 +33,7 @@ h1{
     color: #AC5C74;
 }
 
-/* .imageBox{
-    position: relative;
-    margin-right: 20%;
-    height: 500px;
-    padding-top: 0%;
-    width: 29%;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(251, 197, 214, 0.5);
-    border-right:2px solid  rgba(251, 197, 214, 0.5);
-    border-bottom:2px solid  rgba(251, 197, 214, 0.5);
-} */
+
 
 .btn{
     width: 30px;
@@ -78,9 +67,21 @@ input,select{
     outline: none;
 }
 
+.imageBox p{
+    color: hsla(0, 0%, 100%, 0.5);
+    text-align: center;
+    margin-top: 40px;
+    font-weight:100;
+    }
+
 textarea{
     border: none;
     border-bottom: 1px solid white;
+}
+
+
+.image-holder{
+    margin-top: -20%;
 }
 
 
@@ -98,13 +99,23 @@ label{
     margin-left: 30px;
 }
 
-button{
-    background: linear-gradient(#AC5C74,#AC5C74,#ac5c748e, #ac5c740f);
+
+
+input[type="submit"]{
+    width: 80px;
+    margin: 20px auto;
+    width: 100px;
+    background-color: #AC5C74;
     border: none;
+    text-align: center;
     text-transform: uppercase;
     color: #fff;
     font-size: 15px;
-    
+    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-left:20px;
+    padding-right: 20px;
+
 }
 
 
@@ -120,40 +131,51 @@ body, html {
         flex-direction: column;
         width: 100%;
         height: auto;
+        /* background-image: url(form2.png); */
     }
     
     .form-users, .imageBox {
         width: 100%;
         background-size: cover; 
     }
-    .form-users {
-       margin-left: 0;
-    }
-    .imageBox {
-        padding: 5%;
-    }
-    /* input, select, textarea {
-        width: 100%;
-        padding: 8px;
-        font-size: 12px; 
-        max-height: unset;
-        overflow-y: auto; 
-    } */
+    
 
-    .reverse .lab{
-        margin-left: 30%;
+    .form-users{
+        height: 400px;
+        margin-left: 0;
+       
     }
 
-
-
-
-    button {
-        width: 100%; 
-        margin: 20px auto; 
+    h1{
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: bold;
+        color: #AC5C74;
     }
+
+    input, label, textarea, select{
+        font-size: 14px;
+    }
+
+    ::placeholder{
+        font-size: 14px;
+    }
+
+    .image-holder{
+        margin-top: 0;
+        width: 400px;
+        display: none;
+    }
+
+    .imageBox p{
+    color: hsla(0, 0%, 100%, 0.5);
+    text-align: center;
+    margin-top: 40px;
+    font-weight:100;
+    }
+
 
 }
-
 
 
 
